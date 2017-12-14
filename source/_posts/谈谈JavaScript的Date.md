@@ -5,8 +5,6 @@ tags:
 ---
 >在日常工作中总会用到Date相关的各种''姿势'',有时候总需要查阅一下文档才能使用,虽然与它相关的API有许多,但根据二八定律,常用的应该就一小部分,今天来整理一下它的常用部分巩固基础,熟记下来以后应用时可以省去不少时间.
 
-![image.png](http://upload-images.jianshu.io/upload_images/1808957-bf11f5b6dca2108e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 首先new一个对象
 ![image.png](http://upload-images.jianshu.io/upload_images/1808957-277645a259c26377.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ###  `var myTime = new Date();`
@@ -55,6 +53,10 @@ var time5 = myTime.toUTCString;//根据世界时间将Date()对象转成字符�
 var timeJson = myTime.toJSON();//返回json数据格式的日期
 ```
 ![image.png](http://upload-images.jianshu.io/upload_images/1808957-17ebc8f1320f01aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+```
+var time7 = Date.parse(myTime.toString);//1970.1.1到现在的毫秒数
+```
+![image.png](http://upload-images.jianshu.io/upload_images/1808957-3200e6f36c2ef8a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 工作中常常对日期格式有一些要求,数量熟练以上方法后可以根据自己需求封装日期函数,减少代码量
 
 
